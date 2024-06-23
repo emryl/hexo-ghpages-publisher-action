@@ -80,8 +80,7 @@ git checkout --orphan "${BRANCH}" && \
 git add --all && \
 
 echo 'Start Commit'
-#git commit --allow-empty -m "Deploying to ${BRANCH}" && \
-git commit --allow-empty -m "${COMMIT_MESSAGE}" && \
+git commit --allow-empty -m "Deploying to ${BRANCH}" && \
 
 echo 'Start Push'
 git push origin "${BRANCH}" --force && \
