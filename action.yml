@@ -1,0 +1,9 @@
+name: 'Hexo GitHub Pages Publisher Action'
+description: 'This GitHub action will handle the building and deploying process of a private hexo repository to a GitHub Pages enabled public repository on a custom domain.'
+author: 'mry'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'git-commit'
+  color: 'orange'
