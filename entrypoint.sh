@@ -81,7 +81,7 @@ git add --all && \
 
 echo 'Start Commit'
 #git commit --allow-empty -m "Deploying to ${BRANCH}" && \
-git commit --allow-empty -m "${{ github.event.head_commit.message }}" && \
+git commit --allow-empty -m "${COMMIT_MESSAGE}" && \
 
 echo 'Start Push'
 git push origin "${BRANCH}" --force && \
