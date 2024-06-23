@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
 
     - name: Build and Deploy
-      uses: emryl/hexo-ghpages-publisher-action@master
+      uses: emryl/hexo-ghpages-publisher-action@v1
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_REPOSITORY: blog/emryl.github.io # The repository the action should deploy to.
